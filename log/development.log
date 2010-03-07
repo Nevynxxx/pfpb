@@ -1,0 +1,108 @@
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (22.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to Race (20100307195959)
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (4.6ms)[0m   [0;1mCREATE TABLE "races" ("id" serial primary key, "name" character varying(255), "str_mod" integer DEFAULT 0, "dex_mod" integer DEFAULT 0, "con_mod" integer DEFAULT 0, "int_mod" integer DEFAULT 0, "wis_mod" integer DEFAULT 0, "cha_mod" integer DEFAULT 0, "any" boolean DEFAULT 'f') [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateRaces (20100307201251)
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateRaces (20100307201251)
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateRaces (20100307201251)
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateRaces (20100307201251)
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateRaces (20100307201251)
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (21.3ms)[0m   [0;1mCREATE TABLE "races" ("id" serial primary key, "name" character varying(255), "str_mod" integer DEFAULT 0, "dex_mod" integer DEFAULT 0, "con_mod" integer DEFAULT 0, "int_mod" integer DEFAULT 0, "wis_mod" integer DEFAULT 0, "cha_mod" integer DEFAULT 0, "any" boolean DEFAULT 'f') [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100307201251')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (9.4ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateRaces (20100307201251)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mCREATE TABLE "races" ("id" serial primary key, "name" character varying(255), "str_mod" integer DEFAULT 0, "dex_mod" integer DEFAULT 0, "con_mod" integer DEFAULT 0, "int_mod" integer DEFAULT 0, "wis_mod" integer DEFAULT 0, "cha_mod" integer DEFAULT 0, "any" boolean DEFAULT 'f') [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO "races" ("name", "str_mod", "dex_mod", "con_mod", "int_mod", "wis_mod", "cha_mod", "any") VALUES(E'Dwarf', 0, 0, 2, 0, 2, -2, 'f') RETURNING "id"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "races" ("name", "str_mod", "dex_mod", "con_mod", "int_mod", "wis_mod", "cha_mod", "any") VALUES(E'Elf', 0, 2, -2, 2, 0, 0, 'f') RETURNING "id"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "races" ("name", "str_mod", "dex_mod", "con_mod", "int_mod", "wis_mod", "cha_mod", "any") VALUES(E'Gnome', -2, 0, 2, 0, 0, 2, 'f') RETURNING "id"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "races" ("name", "str_mod", "dex_mod", "con_mod", "int_mod", "wis_mod", "cha_mod", "any") VALUES(E'Half-Elf', 0, 0, 0, 0, 0, 0, 't') RETURNING "id"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "races" ("name", "str_mod", "dex_mod", "con_mod", "int_mod", "wis_mod", "cha_mod", "any") VALUES(E'Half-Orc', 0, 0, 0, 0, 0, 0, 't') RETURNING "id"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "races" ("name", "str_mod", "dex_mod", "con_mod", "int_mod", "wis_mod", "cha_mod", "any") VALUES(E'Halfling', -2, 2, 0, 0, 2, 0, 'f') RETURNING "id"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "races" ("name", "str_mod", "dex_mod", "con_mod", "int_mod", "wis_mod", "cha_mod", "any") VALUES(E'Human', 0, 0, 0, 0, 0, 0, 't') RETURNING "id"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100307201251')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing RacesController#index (for 127.0.0.1 at 2010-03-07 20:18:25) [GET]
+  [4;36;1mRace Load (1.2ms)[0m   [0;1mSELECT * FROM "races" [0m
+Rendering template within layouts/races
+Rendering races/index
+Completed in 119ms (View: 114, DB: 1) | 200 OK [http://localhost/races]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing RacesController#index (for 127.0.0.1 at 2010-03-07 20:20:43) [GET]
+  [4;35;1mRace Load (1.0ms)[0m   [0mSELECT * FROM "races" [0m
+Rendering template within layouts/races
+Rendering races/index
+Completed in 30ms (View: 26, DB: 1) | 200 OK [http://localhost/races]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing RacesController#show (for 127.0.0.1 at 2010-03-07 20:20:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRace Load (0.4ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Rendering template within layouts/races
+Rendering races/show
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/races/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing RacesController#index (for 127.0.0.1 at 2010-03-07 20:22:37) [GET]
+  [4;35;1mRace Load (1.0ms)[0m   [0mSELECT * FROM "races" [0m
+Rendering template within layouts/races
+Rendering races/index
+Completed in 21ms (View: 16, DB: 1) | 200 OK [http://localhost/races]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing RacesController#index (for 127.0.0.1 at 2010-03-07 20:23:09) [GET]
+  [4;36;1mRace Load (2.9ms)[0m   [0;1mSELECT * FROM "races" [0m
+Rendering template within layouts/races
+Rendering races/index
+Completed in 18ms (View: 12, DB: 3) | 200 OK [http://localhost/races]
