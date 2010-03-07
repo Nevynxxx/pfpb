@@ -1,0 +1,29 @@
+<h1>Listing races</h1>
+
+<table>
+  <tr>
+		<th>Name</th>
+		<th>Str Mod</th>
+		<th>Dex Mod</th>
+		<th>Con Mod</th>
+		<th>Int Mod</th>
+		<th>Wis Mod</th>
+		<th>Cha Mod</th>
+		<th>Any</th>
+  </tr>
+
+<% @races.each do |race| %>
+  <tr>
+		<td><%= race.name %></td>
+		<td><%= race.str_mod%></td>
+		<td><%= race.dex_mod%></td>
+		<td><%= race.con_mod%></td>
+		<td><%= race.int_mod%></td>
+		<td><%= race.wis_mod%></td>
+		<td><%= race.cha_mod%></td>
+		<td><%= race.any%></td>
+  </tr>
+<% end %>
+</table>
+
+<br />

@@ -1,0 +1,12 @@
+<h1>Editing race</h1>
+
+<% form_for(@race) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @race %> |
+<%= link_to 'Back', races_path %>
