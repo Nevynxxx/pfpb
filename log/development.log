@@ -106,3 +106,21 @@ Processing RacesController#index (for 127.0.0.1 at 2010-03-07 20:23:09) [GET]
 Rendering template within layouts/races
 Rendering races/index
 Completed in 18ms (View: 12, DB: 3) | 200 OK [http://localhost/races]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing RacesController#index (for 127.0.0.1 at 2010-03-07 20:36:53) [GET]
+  [4;35;1mRace Load (1.0ms)[0m   [0mSELECT * FROM "races" [0m
+Rendering template within layouts/races
+Rendering races/index
+Completed in 17ms (View: 13, DB: 1) | 200 OK [http://localhost/races]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing RacesController#index (for 127.0.0.1 at 2010-03-07 20:41:27) [GET]
+  [4;36;1mRace Load (1.1ms)[0m   [0;1mSELECT * FROM "races" [0m
+Rendering template within layouts/races
+Rendering races/index
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/]
