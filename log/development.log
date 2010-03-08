@@ -301,3 +301,473 @@ Processing CharactersController#new (for 127.0.0.1 at 2010-03-08 15:10:05) [GET]
 Rendering template within layouts/characters
 Rendering characters/new
 Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/characters/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateRaces (20100307201251)
+Migrating to CreateCharacters (20100308145834)
+Migrating to AddRaceIdToCharacter (20100308152543)
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mALTER TABLE "characters" ADD COLUMN "race_id" integer[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100308152543')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-03-08 15:30:27) [GET]
+  [4;36;1mRace Load (0.5ms)[0m   [0;1mSELECT * FROM "races" [0m
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 115ms (View: 15, DB: 1) | 200 OK [http://localhost/characters/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-03-08 15:33:30) [GET]
+  [4;35;1mRace Load (0.5ms)[0m   [0mSELECT * FROM "races" ORDER BY name[0m
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 16ms (View: 5, DB: 1) | 200 OK [http://localhost/characters/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#create (for 127.0.0.1 at 2010-03-08 15:33:41) [POST]
+  Parameters: {"authenticity_token"=>"VGHe031S9qsXFLdciLftK+yHbdhi+3ojvUAfW8U4LuU=", "character"=>{"name"=>"1", "strength"=>"10", "dexterity"=>"10", "constitution"=>"10", "intelegence"=>"10", "wisdom"=>"10", "charisma"=>"10"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(E'1', 10, 10, 10, 10, 10, 10, '2010-03-08 15:33:41.357516', '2010-03-08 15:33:41.357516', NULL) RETURNING "id"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/characters/1
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/characters]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-08 15:33:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCharacter Load (0.3ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 1) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/characters/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-03-08 15:33:53) [GET]
+  [4;36;1mCharacter Load (1.2ms)[0m   [0;1mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+Completed in 20ms (View: 15, DB: 1) | 200 OK [http://localhost/characters]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-08 15:34:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCharacter Load (0.3ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 1) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #8 of app/views/characters/show.html.erb:
+5: 
+6: <p>
+7:   <b>Race:</b>
+8:   <%=h @character.race.name %>
+9: </p>
+10: 
+11: <p>
+
+    app/views/characters/show.html.erb:8
+    app/controllers/characters_controller.rb:18:in `show'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (59.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-08 15:35:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCharacter Load (0.3ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 1) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/characters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-08 15:36:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCharacter Load (0.4ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 1) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/characters/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-08 15:38:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCharacter Load (0.3ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 1) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #8 of app/views/characters/show.html.erb:
+5: 
+6: <p>
+7:   <b>Race:</b>
+8:   <%=h @character.race.name %>
+9: </p>
+10: 
+11: <p>
+
+    app/views/characters/show.html.erb:8
+    app/controllers/characters_controller.rb:18:in `show'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (63.6ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-03-08 15:38:07) [GET]
+  [4;35;1mRace Load (0.8ms)[0m   [0mSELECT * FROM "races" ORDER BY name[0m
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 88ms (View: 37, DB: 1) | 200 OK [http://localhost/characters/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#create (for 127.0.0.1 at 2010-03-08 15:38:19) [POST]
+  Parameters: {"authenticity_token"=>"VGHe031S9qsXFLdciLftK+yHbdhi+3ojvUAfW8U4LuU=", "character"=>{"name"=>"4", "strength"=>"10", "dexterity"=>"20", "constitution"=>"20", "intelegence"=>"10", "wisdom"=>"10", "charisma"=>"10"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(E'4', 10, 20, 20, 10, 10, 10, '2010-03-08 15:38:19.364072', '2010-03-08 15:38:19.364072', NULL) RETURNING "id"[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/characters/2
+Completed in 16ms (DB: 2) | 302 Found [http://localhost/characters]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-08 15:38:19) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mCharacter Load (0.3ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 2) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #8 of app/views/characters/show.html.erb:
+5: 
+6: <p>
+7:   <b>Race:</b>
+8:   <%=h @character.race.name %>
+9: </p>
+10: 
+11: <p>
+
+    app/views/characters/show.html.erb:8
+    app/controllers/characters_controller.rb:18:in `show'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (66.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-03-08 15:39:34) [GET]
+  [4;36;1mRace Load (0.5ms)[0m   [0;1mSELECT * FROM "races" ORDER BY name[0m
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 25ms (View: 13, DB: 1) | 200 OK [http://localhost/characters/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#create (for 127.0.0.1 at 2010-03-08 15:39:51) [POST]
+  Parameters: {"authenticity_token"=>"VGHe031S9qsXFLdciLftK+yHbdhi+3ojvUAfW8U4LuU=", "character"=>{"name"=>"3", "strength"=>"10", "dexterity"=>"10", "constitution"=>"11", "intelegence"=>"10", "wisdom"=>"10", "charisma"=>"10"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(E'3', 10, 10, 11, 10, 10, 10, '2010-03-08 15:39:51.709771', '2010-03-08 15:39:51.709771', NULL) RETURNING "id"[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/characters/3
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/characters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-08 15:39:51) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mCharacter Load (0.3ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 3) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #8 of app/views/characters/show.html.erb:
+5: 
+6: <p>
+7:   <b>Race:</b>
+8:   <%=h @character.race.name %>
+9: </p>
+10: 
+11: <p>
+
+    app/views/characters/show.html.erb:8
+    app/controllers/characters_controller.rb:18:in `show'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (94.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#create (for 127.0.0.1 at 2010-03-08 15:40:42) [POST]
+  Parameters: {"authenticity_token"=>"VGHe031S9qsXFLdciLftK+yHbdhi+3ojvUAfW8U4LuU=", "character"=>{"name"=>"3", "strength"=>"10", "dexterity"=>"10", "constitution"=>"11", "intelegence"=>"10", "wisdom"=>"10", "charisma"=>"10"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(E'3', 10, 10, 11, 10, 10, 10, '2010-03-08 15:40:42.709650', '2010-03-08 15:40:42.709650', NULL) RETURNING "id"[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/characters/4
+Completed in 15ms (DB: 2) | 302 Found [http://localhost/characters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-08 15:40:42) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mCharacter Load (0.3ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 4) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #8 of app/views/characters/show.html.erb:
+5: 
+6: <p>
+7:   <b>Race:</b>
+8:   <%=h @character.race.name %>
+9: </p>
+10: 
+11: <p>
+
+    app/views/characters/show.html.erb:8
+    app/controllers/characters_controller.rb:18:in `show'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (77.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-03-08 15:41:09) [GET]
+  [4;35;1mRace Load (0.5ms)[0m   [0mSELECT * FROM "races" ORDER BY name[0m
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 27ms (View: 14, DB: 1) | 200 OK [http://localhost/characters/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#create (for 127.0.0.1 at 2010-03-08 15:41:36) [POST]
+  Parameters: {"authenticity_token"=>"VGHe031S9qsXFLdciLftK+yHbdhi+3ojvUAfW8U4LuU=", "character"=>{"name"=>"kjnn", "race_id"=>"1", "strength"=>"10", "dexterity"=>"10", "constitution"=>"10", "intelegence"=>"10", "wisdom"=>"10", "charisma"=>"10"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(E'kjnn', 10, 10, 10, 10, 10, 10, '2010-03-08 15:41:36.038233', '2010-03-08 15:41:36.038233', 1) RETURNING "id"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/characters/5
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/characters]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-08 15:41:36) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mCharacter Load (0.3ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 5) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;36;1mRace Load (0.3ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/characters/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-03-08 15:41:51) [GET]
+  [4;35;1mCharacter Load (1.2ms)[0m   [0mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+Completed in 22ms (View: 16, DB: 1) | 200 OK [http://localhost/characters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#destroy (for 127.0.0.1 at 2010-03-08 15:42:00) [DELETE]
+  Parameters: {"authenticity_token"=>"VGHe031S9qsXFLdciLftK+yHbdhi+3ojvUAfW8U4LuU=", "id"=>"1"}
+  [4;36;1mCharacter Load (0.4ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCharacter Destroy (0.1ms)[0m   [0;1mDELETE FROM "characters" WHERE "id" = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/characters
+Completed in 8ms (DB: 1) | 302 Found [http://localhost/characters/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-03-08 15:42:00) [GET]
+  [4;36;1mCharacter Load (1.1ms)[0m   [0;1mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+Completed in 13ms (View: 9, DB: 1) | 200 OK [http://localhost/characters]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#destroy (for 127.0.0.1 at 2010-03-08 15:42:03) [DELETE]
+  Parameters: {"authenticity_token"=>"VGHe031S9qsXFLdciLftK+yHbdhi+3ojvUAfW8U4LuU=", "id"=>"2"}
+  [4;35;1mCharacter Load (0.4ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 2) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCharacter Destroy (0.1ms)[0m   [0mDELETE FROM "characters" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/characters
+Completed in 8ms (DB: 1) | 302 Found [http://localhost/characters/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-03-08 15:42:03) [GET]
+  [4;35;1mCharacter Load (1.0ms)[0m   [0mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+Completed in 12ms (View: 8, DB: 1) | 200 OK [http://localhost/characters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#destroy (for 127.0.0.1 at 2010-03-08 15:42:05) [DELETE]
+  Parameters: {"authenticity_token"=>"VGHe031S9qsXFLdciLftK+yHbdhi+3ojvUAfW8U4LuU=", "id"=>"3"}
+  [4;36;1mCharacter Load (0.4ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 3) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCharacter Destroy (0.1ms)[0m   [0;1mDELETE FROM "characters" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/characters
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/characters/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-03-08 15:42:05) [GET]
+  [4;36;1mCharacter Load (2.9ms)[0m   [0;1mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+Completed in 13ms (View: 7, DB: 3) | 200 OK [http://localhost/characters]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#destroy (for 127.0.0.1 at 2010-03-08 15:42:08) [DELETE]
+  Parameters: {"authenticity_token"=>"VGHe031S9qsXFLdciLftK+yHbdhi+3ojvUAfW8U4LuU=", "id"=>"4"}
+  [4;35;1mCharacter Load (0.5ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 4) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCharacter Destroy (0.1ms)[0m   [0mDELETE FROM "characters" WHERE "id" = 4[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/characters
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/characters/4]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-03-08 15:42:08) [GET]
+  [4;35;1mCharacter Load (1.0ms)[0m   [0mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/characters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#destroy (for 127.0.0.1 at 2010-03-08 15:42:10) [DELETE]
+  Parameters: {"authenticity_token"=>"VGHe031S9qsXFLdciLftK+yHbdhi+3ojvUAfW8U4LuU=", "id"=>"5"}
+  [4;36;1mCharacter Load (0.4ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 5) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCharacter Destroy (0.1ms)[0m   [0;1mDELETE FROM "characters" WHERE "id" = 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/characters
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/characters/5]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-03-08 15:42:10) [GET]
+  [4;36;1mCharacter Load (1.0ms)[0m   [0;1mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://localhost/characters]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-03-08 15:42:41) [GET]
+  [4;35;1mCharacter Load (0.7ms)[0m   [0mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/characters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-03-08 15:42:42) [GET]
+  [4;36;1mRace Load (0.5ms)[0m   [0;1mSELECT * FROM "races" ORDER BY name[0m
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 46ms (View: 34, DB: 1) | 200 OK [http://localhost/characters/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#create (for 127.0.0.1 at 2010-03-08 15:42:50) [POST]
+  Parameters: {"authenticity_token"=>"VGHe031S9qsXFLdciLftK+yHbdhi+3ojvUAfW8U4LuU=", "character"=>{"name"=>"Bob", "race_id"=>"1", "strength"=>"10", "dexterity"=>"10", "constitution"=>"10", "intelegence"=>"10", "wisdom"=>"10", "charisma"=>"10"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(E'Bob', 10, 10, 10, 10, 10, 10, '2010-03-08 15:42:50.440152', '2010-03-08 15:42:50.440152', 1) RETURNING "id"[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/characters/6
+Completed in 16ms (DB: 2) | 302 Found [http://localhost/characters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-08 15:42:50) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mCharacter Load (0.4ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 6) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;35;1mRace Load (0.2ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 16ms (View: 8, DB: 1) | 200 OK [http://localhost/characters/6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-03-08 15:42:53) [GET]
+  [4;36;1mCharacter Load (1.0ms)[0m   [0;1mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+  [4;35;1mRace Load (0.3ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 15ms (View: 11, DB: 1) | 200 OK [http://localhost/characters]

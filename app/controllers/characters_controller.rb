@@ -25,6 +25,7 @@ class CharactersController < ApplicationController
   # GET /characters/new.xml
   def new
     @character = Character.new
+		@races = Race.find(:all, :order => "name").map {|u| [u.name, u.id]}
 
     respond_to do |format|
       format.html # new.html.erb

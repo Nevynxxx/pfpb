@@ -8,6 +8,10 @@
     <%= f.text_field :name %>
   </p>
   <p>
+    <%= f.label :race %><br />
+    <%= f.select :race_id, @races %>
+  </p>
+  <p>
     <%= f.label :strength %><br />
     <%= f.text_field :strength %>
   </p>

@@ -3,6 +3,7 @@
 <table>
   <tr>
     <th>Name</th>
+    <th>Race</th>
     <th>Strength</th>
     <th>Dexterity</th>
     <th>Constitution</th>
@@ -14,6 +15,7 @@
 <% @characters.each do |character| %>
   <tr>
     <td><%=h character.name %></td>
+    <td><%=h character.race.name %></td>
     <td><%=h character.strength %></td>
     <td><%=h character.dexterity %></td>
     <td><%=h character.constitution %></td>
