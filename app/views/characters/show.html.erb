@@ -1,0 +1,38 @@
+<p>
+  <b>Name:</b>
+  <%=h @character.name %>
+</p>
+
+<p>
+  <b>Strength:</b>
+  <%=h @character.strength %>
+</p>
+
+<p>
+  <b>Dexterity:</b>
+  <%=h @character.dexterity %>
+</p>
+
+<p>
+  <b>Constitution:</b>
+  <%=h @character.constitution %>
+</p>
+
+<p>
+  <b>Intelegence:</b>
+  <%=h @character.intelegence %>
+</p>
+
+<p>
+  <b>Wisdom:</b>
+  <%=h @character.wisdom %>
+</p>
+
+<p>
+  <b>Charisma:</b>
+  <%=h @character.charisma %>
+</p>
+
+
+<%= link_to 'Edit', edit_character_path(@character) %> |
+<%= link_to 'Back', characters_path %>

@@ -1,0 +1,39 @@
+<h1>New character</h1>
+
+<% form_for(@character) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :strength %><br />
+    <%= f.text_field :strength %>
+  </p>
+  <p>
+    <%= f.label :dexterity %><br />
+    <%= f.text_field :dexterity %>
+  </p>
+  <p>
+    <%= f.label :constitution %><br />
+    <%= f.text_field :constitution %>
+  </p>
+  <p>
+    <%= f.label :intelegence %><br />
+    <%= f.text_field :intelegence %>
+  </p>
+  <p>
+    <%= f.label :wisdom %><br />
+    <%= f.text_field :wisdom %>
+  </p>
+  <p>
+    <%= f.label :charisma %><br />
+    <%= f.text_field :charisma %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', characters_path %>
