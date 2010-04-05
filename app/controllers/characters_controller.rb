@@ -26,6 +26,14 @@ class CharactersController < ApplicationController
   def new
     @character = Character.new
 		@races = Race.find(:all, :order => "name").map {|u| [u.name, u.id]}
+		@character.strength = 10
+		@character.dexterity = 10
+		@character.constitution = 10
+		@character.intelegence = 10
+		@character.wisdom = 10
+		@character.charisma = 10
+
+		@character.save
 
     respond_to do |format|
       format.html # new.html.erb
@@ -83,4 +91,17 @@ class CharactersController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+	def inc_str
+    @character = Character.find(params[:id])
+		puts "Arrggghhh"
+	  @character.strength = params[:strength] + 1
+		@character.save
+
+		respond_to do |format|
+      #format.html { redirect_to_index }
+      format.xml  { head :ok }
+    end
+	end
+	
 end

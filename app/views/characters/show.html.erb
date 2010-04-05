@@ -8,36 +8,67 @@
   <%=h @character.race.name %>
 </p>
 
-<p>
-  <b>Strength:</b>
-  <%=h @character.strength %>
-</p>
+<table>
+<tr>
+	<th>Stat</th>
+	<th>Base</th>
+	<th>Race Mod</th>
+	<th>Total</th>
+	<th>Points</th>
+</tr>
+<tr>
+  <td><b>Strength:</b></td>
+  <td><%=h @character.strength %></td>
+  <td><%=h @character.race.str_mod %></td>
+  <td><%=h @character.aStr %></td>
+  <td><%=h @character.points("strength") %></td>
+</tr>
 
-<p>
-  <b>Dexterity:</b>
-  <%=h @character.dexterity %>
-</p>
+<tr>
+  <td><b>Dexterity:</b></td>
+  <td><%=h @character.dexterity %></td>
+  <td><%=h @character.race.dex_mod %></td>
+  <td><%=h @character.aDex %></td>
+  <td><%=h @character.points("dexterity") %></td>
+</tr>
 
-<p>
-  <b>Constitution:</b>
-  <%=h @character.constitution %>
-</p>
+<tr>
+  <td><b>Constitution:</b></td>
+  <td><%=h @character.constitution %></td>
+  <td><%=h @character.race.con_mod %></td>
+  <td><%=h @character.aCon %></td>
+  <td><%=h @character.points("constitution") %></td>
+</tr>
 
-<p>
-  <b>Intelegence:</b>
-  <%=h @character.intelegence %>
-</p>
+<tr>
+  <td><b>Intelegence:</b></td>
+  <td><%=h @character.intelegence %></td>
+  <td><%=h @character.race.int_mod %></td>
+  <td><%=h @character.aInt %></td>
+  <td><%=h @character.points("intelegence") %></td>
+</tr>
 
-<p>
-  <b>Wisdom:</b>
-  <%=h @character.wisdom %>
-</p>
+<tr>
+  <td><b>Wisdom:</b></td>
+  <td><%=h @character.wisdom %></td>
+  <td><%=h @character.race.wis_mod %></td>
+  <td><%=h @character.aWis %></td>
+  <td><%=h @character.points("wisdom") %></td>
+</tr>
 
-<p>
-  <b>Charisma:</b>
-  <%=h @character.charisma %>
-</p>
+<tr>
+  <td><b>Charisma:</b></td>
+  <td><%=h @character.charisma %></td>
+  <td><%=h @character.race.cha_mod %></td>
+  <td><%=h @character.aCha %></td>
+  <td><%=h @character.points("charisma") %></td>
+</tr>
 
-
-<%= link_to 'Edit', edit_character_path(@character) %> |
-<%= link_to 'Back', characters_path %>
+<tr>
+	<td />
+	<td />
+	<td />
+	<td><b>Total points</b></td>
+	<td><%=h @character.total_points %></td>
+</tr>
+</table>

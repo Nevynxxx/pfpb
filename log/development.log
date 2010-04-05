@@ -771,3 +771,1584 @@ Rendering template within layouts/characters
 Rendering characters/index
   [4;35;1mRace Load (0.3ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
 Completed in 15ms (View: 11, DB: 1) | 200 OK [http://localhost/characters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-03-08 15:50:10) [GET]
+  [4;36;1mCharacter Load (1.0ms)[0m   [0;1mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+  [4;35;1mRace Load (0.3ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 23ms (View: 18, DB: 1) | 200 OK [http://localhost/characters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-03-08 15:50:12) [GET]
+  [4;36;1mCharacter Load (1.6ms)[0m   [0;1mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+  [4;35;1mRace Load (0.3ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 16ms (View: 11, DB: 2) | 200 OK [http://localhost/characters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-03-08 15:52:24) [GET]
+  [4;36;1mCharacter Load (1.5ms)[0m   [0;1mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+  [4;35;1mRace Load (0.3ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 16ms (View: 11, DB: 2) | 200 OK [http://localhost/characters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-03-08 15:52:26) [GET]
+  [4;36;1mCharacter Load (1.1ms)[0m   [0;1mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+  [4;35;1mRace Load (0.3ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://localhost/characters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-08 15:52:28) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mCharacter Load (0.7ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 6) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;35;1mRace Load (0.2ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/characters/6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-03-08 15:52:32) [GET]
+  [4;36;1mCharacter Load (1.1ms)[0m   [0;1mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+  [4;35;1mRace Load (0.3ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 16ms (View: 12, DB: 1) | 200 OK [http://localhost/characters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-03-08 15:53:26) [GET]
+  [4;36;1mCharacter Load (1.1ms)[0m   [0;1mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+  [4;35;1mRace Load (2.6ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `sDex' for #<Character:0xb75bbb0>) on line #20 of app/views/characters/index.html.erb:
+17:     <td><%=h character.name %></td>
+18:     <td><%=h character.race.name %></td>
+19:     <td><%=h character.aStr %></td>
+20:     <td><%=h character.sDex%></td>
+21:     <td><%=h character.aCon%></td>
+22:     <td><%=h character.aInt%></td>
+23:     <td><%=h character.aWis%></td>
+
+    app/views/characters/index.html.erb:20:in `block in _run_erb_app47views47characters47index46html46erb'
+    app/views/characters/index.html.erb:15:in `each'
+    app/views/characters/index.html.erb:15
+    app/controllers/characters_controller.rb:7:in `index'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (95.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-03-08 15:53:40) [GET]
+  [4;36;1mCharacter Load (1.2ms)[0m   [0;1mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+  [4;35;1mRace Load (0.3ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 24ms (View: 19, DB: 2) | 200 OK [http://localhost/characters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-03-08 15:56:27) [GET]
+  [4;36;1mCharacter Load (1.1ms)[0m   [0;1mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+  [4;35;1mRace Load (0.3ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 24ms (View: 19, DB: 1) | 200 OK [http://localhost/characters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-03-08 15:56:34) [GET]
+  [4;36;1mRace Load (0.5ms)[0m   [0;1mSELECT * FROM "races" ORDER BY name[0m
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 16ms (View: 5, DB: 1) | 200 OK [http://localhost/characters/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#create (for 127.0.0.1 at 2010-03-08 15:56:57) [POST]
+  Parameters: {"authenticity_token"=>"VGHe031S9qsXFLdciLftK+yHbdhi+3ojvUAfW8U4LuU=", "character"=>{"name"=>"Snarf", "race_id"=>"2", "strength"=>"8", "dexterity"=>"12", "constitution"=>"14", "intelegence"=>"18", "wisdom"=>"10", "charisma"=>"16"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(E'Snarf', 8, 12, 14, 18, 10, 16, '2010-03-08 15:56:57.472152', '2010-03-08 15:56:57.472152', 2) RETURNING "id"[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/characters/7
+Completed in 16ms (DB: 1) | 302 Found [http://localhost/characters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-08 15:56:57) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mCharacter Load (0.3ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 7) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;35;1mRace Load (0.2ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 2) [0m
+Completed in 16ms (View: 8, DB: 1) | 200 OK [http://localhost/characters/7]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-03-08 15:56:59) [GET]
+  [4;36;1mCharacter Load (1.0ms)[0m   [0;1mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+  [4;35;1mRace Load (0.3ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+  [4;36;1mRace Load (0.1ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 2) [0m
+Completed in 17ms (View: 12, DB: 2) | 200 OK [http://localhost/characters]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-08 15:59:45) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mCharacter Load (0.3ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 7) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;36;1mRace Load (0.2ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 2) [0m
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/characters/7]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-08 16:04:57) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mCharacter Load (0.3ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 7) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;36;1mRace Load (0.2ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 2) [0m
+Completed in 22ms (View: 15, DB: 1) | 200 OK [http://localhost/characters/7]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-08 16:06:39) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mCharacter Load (0.3ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 7) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;36;1mRace Load (0.3ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 2) [0m
+Completed in 22ms (View: 15, DB: 1) | 200 OK [http://localhost/characters/7]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-08 16:07:12) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mCharacter Load (0.3ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 7) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;36;1mRace Load (0.2ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 2) [0m
+Completed in 22ms (View: 15, DB: 1) | 200 OK [http://localhost/characters/7]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-08 16:08:42) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mCharacter Load (0.4ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 7) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;36;1mRace Load (0.2ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 2) [0m
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://localhost/characters/7]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-08 16:10:33) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mCharacter Load (0.3ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 7) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;36;1mRace Load (0.3ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 2) [0m
+
+ActionView::TemplateError (uninitialized constant Character::Intelegence) on line #48 of app/views/characters/show.html.erb:
+45:   <td><%=h @character.intelegence %></td>
+46:   <td><%=h @character.race.int_mod %></td>
+47:   <td><%=h @character.aInt %></td>
+48:   <td><%=h @character.points("Intelegence") %></td>
+49: </tr>
+50: 
+51: <tr>
+
+    app/models/character.rb:30:in `eval'
+    (eval):1:in `points'
+    app/models/character.rb:30:in `eval'
+    app/models/character.rb:30:in `points'
+    app/views/characters/show.html.erb:48
+    app/controllers/characters_controller.rb:18:in `show'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (64.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-08 16:10:49) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mCharacter Load (0.4ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 7) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;36;1mRace Load (0.3ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 2) [0m
+Completed in 81ms (View: 73, DB: 1) | 200 OK [http://localhost/characters/7]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-08 16:13:59) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mCharacter Load (0.3ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 7) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;36;1mRace Load (0.3ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 2) [0m
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://localhost/characters/7]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-08 16:26:47) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mCharacter Load (0.3ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 7) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;36;1mRace Load (0.3ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 2) [0m
+Completed in 25ms (View: 18, DB: 1) | 200 OK [http://localhost/characters/7]
+/!\ FAILSAFE /!\  2010-03-13 13:07:47 +0000
+  Status: 500 Internal Server Error
+  could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/postgresql_adapter.rb:968:in `initialize'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/postgresql_adapter.rb:968:in `new'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/postgresql_adapter.rb:968:in `connect'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    /usr/lib/ruby19/1.9.1/monitor.rb:190:in `mon_synchronize'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing RacesController#index (for 127.0.0.1 at 2010-03-13 13:08:25) [GET]
+  [4;36;1mRace Load (173.5ms)[0m   [0;1mSELECT * FROM "races" [0m
+Rendering template within layouts/races
+Rendering races/index
+Completed in 573ms (View: 331, DB: 174) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-03-13 13:08:40) [GET]
+  [4;35;1mRace Load (0.6ms)[0m   [0mSELECT * FROM "races" ORDER BY name[0m
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 207ms (View: 158, DB: 1) | 200 OK [http://localhost/characters/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#create (for 127.0.0.1 at 2010-03-13 13:09:54) [POST]
+  Parameters: {"authenticity_token"=>"cAgnoOpeoVRvJm1NnehIE9lG2JfU/nEjktfkBAn4taE=", "character"=>{"name"=>"Akori", "race_id"=>"2", "strength"=>"9", "dexterity"=>"13", "constitution"=>"10", "intelegence"=>"14", "wisdom"=>"13", "charisma"=>"16"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (66.6ms)[0m   [0mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(E'Akori', 9, 13, 10, 14, 13, 16, '2010-03-13 13:09:54.384719', '2010-03-13 13:09:54.384719', 2) RETURNING "id"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/characters/8
+Completed in 186ms (DB: 67) | 302 Found [http://localhost/characters]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-03-13 13:09:54) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mCharacter Load (0.3ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 8) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;36;1mRace Load (0.7ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 2) [0m
+Completed in 47ms (View: 37, DB: 1) | 200 OK [http://localhost/characters/8]
+/!\ FAILSAFE /!\  2010-04-05 21:31:31 +0100
+  Status: 500 Internal Server Error
+  could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/postgresql_adapter.rb:968:in `initialize'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/postgresql_adapter.rb:968:in `new'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/postgresql_adapter.rb:968:in `connect'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    /usr/lib/ruby19/1.9.1/monitor.rb:190:in `mon_synchronize'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2010-04-05 21:31:35 +0100
+  Status: 500 Internal Server Error
+  could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/postgresql_adapter.rb:968:in `initialize'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/postgresql_adapter.rb:968:in `new'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/postgresql_adapter.rb:968:in `connect'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    /usr/lib/ruby19/1.9.1/monitor.rb:190:in `mon_synchronize'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-04-05 21:32:18) [GET]
+  [4;36;1mCharacter Load (153.2ms)[0m   [0;1mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+  [4;35;1mRace Load (22.5ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+  [4;36;1mRace Load (0.3ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 2) [0m
+Completed in 809ms (View: 585, DB: 176) | 200 OK [http://localhost/characters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-04-05 21:32:24) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mCharacter Load (75.0ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 6) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;35;1mRace Load (0.3ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 167ms (View: 84, DB: 75) | 200 OK [http://localhost/characters/6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-04-05 21:32:30) [GET]
+  [4;36;1mRace Load (0.9ms)[0m   [0;1mSELECT * FROM "races" ORDER BY name[0m
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 37ms (View: 26, DB: 1) | 200 OK [http://localhost/characters/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-04-05 21:39:41) [GET]
+  [4;35;1mRace Load (0.5ms)[0m   [0mSELECT * FROM "races" ORDER BY name[0m
+Rendering template within layouts/characters
+Rendering characters/new
+
+ActionView::TemplateError (Missing template characters/_Character.erb in view path app/views) on line #3 of app/views/characters/new.html.erb:
+1: <h1>New character</h1>
+2: 
+3: <%= render(:partial => "Character", :object => @character) %>
+4: 
+5: <%= link_to 'Back', characters_path %>
+
+    app/views/characters/new.html.erb:3
+    app/controllers/characters_controller.rb:30:in `new'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (63.6ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-04-05 21:40:08) [GET]
+  [4;36;1mRace Load (0.5ms)[0m   [0;1mSELECT * FROM "races" ORDER BY name[0m
+Rendering template within layouts/characters
+Rendering characters/new
+ERROR: compiling _run_erb_app47views47characters47_Character46erb_locals_Character_object RAISED /home/anthony/Personal/Projects/PFPB/app/views/characters/_Character.erb:1: dynamic constant assignment
+...fer = output_buffer;Character = local_assigns[:Character];ob...
+...                               ^
+Function body:           def _run_erb_app47views47characters47_Character46erb_locals_Character_object(local_assigns)
+            old_output_buffer = output_buffer;Character = local_assigns[:Character];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ;  form_for(character) do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :name ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :race ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.select :race_id, @races ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :strength ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :strength ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :dexterity ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :dexterity ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :constitution ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :constitution ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :intelegence ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :intelegence ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :wisdom ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :wisdom ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :charisma ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :charisma ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.submit 'Create' ).to_s); @output_buffer.concat "\n  </p>\n"
+
+;  end ; @output_buffer.concat "\n"
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `module_eval'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `compile!'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `block in render'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `block in benchmark'
+/usr/lib/ruby19/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/usr/lib/ruby19/1.9.1/benchmark.rb:309:in `realtime'
+/usr/lib/ruby19/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/home/anthony/Personal/Projects/PFPB/app/views/characters/new.html.erb:3:in `_run_erb_app47views47characters47new46html46erb'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `block in render'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+/usr/lib/ruby19/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/usr/lib/ruby19/1.9.1/benchmark.rb:309:in `realtime'
+/usr/lib/ruby19/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `block in custom'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `block in respond'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/anthony/Personal/Projects/PFPB/app/controllers/characters_controller.rb:30:in `new'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+/usr/lib/ruby19/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/usr/lib/ruby19/1.9.1/benchmark.rb:309:in `realtime'
+/usr/lib/ruby19/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action_with_flash'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process_with_filters'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+/usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `block in call'
+/usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby19/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+/usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby19/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/lib/ruby19/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+/usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby19/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby19/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+/usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+/usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+ActionView::TemplateError (/home/anthony/Personal/Projects/PFPB/app/views/characters/_Character.erb:1: dynamic constant assignment
+...fer = output_buffer;Character = local_assigns[:Character];ob...
+...                               ^) on line #1 of app/views/characters/_Character.erb:
+1: <% form_for(character) do |f| %>
+2:   <%= f.error_messages %>
+3: 
+4:   <p>
+
+    app/views/characters/new.html.erb:3
+    app/controllers/characters_controller.rb:30:in `new'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (110.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-04-05 21:40:33) [GET]
+  [4;35;1mRace Load (0.5ms)[0m   [0mSELECT * FROM "races" ORDER BY name[0m
+Rendering template within layouts/characters
+Rendering characters/new
+Rendered characters/_character (11.6ms)
+Completed in 47ms (View: 36, DB: 1) | 200 OK [http://localhost/characters/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#create (for 127.0.0.1 at 2010-04-05 21:43:39) [POST]
+  Parameters: {"authenticity_token"=>"ALMFvb9aAKqVrTYM/yBUU3RUay9toX1x+tOJ+hYePk0=", "character"=>{"name"=>"Doopy", "race_id"=>"1", "strength"=>"10", "dexterity"=>"10", "constitution"=>"10", "intelegence"=>"10", "wisdom"=>"10", "charisma"=>"10"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (10.6ms)[0m   [0mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(E'Doopy', 10, 10, 10, 10, 10, 10, '2010-04-05 20:43:39.020164', '2010-04-05 20:43:39.020164', 1) RETURNING "id"[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/characters/9
+Completed in 143ms (DB: 11) | 302 Found [http://localhost/characters]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-04-05 21:43:39) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mCharacter Load (0.3ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 9) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;36;1mRace Load (0.2ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/characters/9]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-04-05 21:56:01) [GET]
+  [4;35;1mRace Load (0.5ms)[0m   [0mSELECT * FROM "races" ORDER BY name[0m
+
+NameError (undefined local variable or method `redirect_to_edit' for #<CharactersController:0xa21124c>):
+  app/controllers/characters_controller.rb:29:in `new'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (72.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-04-05 21:56:30) [GET]
+  [4;36;1mRace Load (0.5ms)[0m   [0;1mSELECT * FROM "races" ORDER BY name[0m
+Rendering template within layouts/characters
+Rendering characters/new
+Rendered characters/_character (6.3ms)
+Completed in 26ms (View: 13, DB: 1) | 200 OK [http://localhost/characters/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#create (for 127.0.0.1 at 2010-04-05 21:56:32) [POST]
+  Parameters: {"authenticity_token"=>"ALMFvb9aAKqVrTYM/yBUU3RUay9toX1x+tOJ+hYePk0=", "character"=>{"name"=>"", "race_id"=>"1", "strength"=>""}, "commit"=>"+"}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(E'', NULL, NULL, NULL, NULL, NULL, NULL, '2010-04-05 20:56:32.182317', '2010-04-05 20:56:32.182317', 1) RETURNING "id"[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/characters/10
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/characters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-04-05 21:56:32) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mCharacter Load (0.3ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 10) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;35;1mRace Load (0.2ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+) on line #23 of app/views/characters/show.html.erb:
+20:   <td><b>Strength:</b></td>
+21:   <td><%=h @character.strength %></td>
+22:   <td><%=h @character.race.str_mod %></td>
+23:   <td><%=h @character.aStr %></td>
+24:   <td><%=h @character.points("strength") %></td>
+25: </tr>
+26: 
+
+    app/models/character.rb:5:in `aStr'
+    app/views/characters/show.html.erb:23
+    app/controllers/characters_controller.rb:18:in `show'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (92.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#create (for 127.0.0.1 at 2010-04-05 21:56:37) [POST]
+  Parameters: {"authenticity_token"=>"ALMFvb9aAKqVrTYM/yBUU3RUay9toX1x+tOJ+hYePk0=", "character"=>{"name"=>"", "race_id"=>"1", "strength"=>"1"}, "commit"=>"+"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(E'', 1, NULL, NULL, NULL, NULL, NULL, '2010-04-05 20:56:37.367104', '2010-04-05 20:56:37.367104', 1) RETURNING "id"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/characters/11
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/characters]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-04-05 21:56:37) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mCharacter Load (0.3ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 11) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;36;1mRace Load (0.3ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+) on line #31 of app/views/characters/show.html.erb:
+28:   <td><b>Dexterity:</b></td>
+29:   <td><%=h @character.dexterity %></td>
+30:   <td><%=h @character.race.dex_mod %></td>
+31:   <td><%=h @character.aDex %></td>
+32:   <td><%=h @character.points("dexterity") %></td>
+33: </tr>
+34: 
+
+    app/models/character.rb:9:in `aDex'
+    app/views/characters/show.html.erb:31
+    app/controllers/characters_controller.rb:18:in `show'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (68.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-04-05 21:56:49) [GET]
+  [4;35;1mCharacter Load (1.2ms)[0m   [0mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+  [4;36;1mRace Load (0.3ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+  [4;35;1mRace Load (0.1ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+) on line #20 of app/views/characters/index.html.erb:
+17:   <tr>
+18:     <td><%=h character.name %></td>
+19:     <td><%=h character.race.name %></td>
+20:     <td><%=h character.aStr %></td>
+21:     <td><%=h character.aDex %></td>
+22:     <td><%=h character.aCon %></td>
+23:     <td><%=h character.aInt %></td>
+
+    app/models/character.rb:5:in `aStr'
+    app/views/characters/index.html.erb:20:in `block in _run_erb_app47views47characters47index46html46erb'
+    app/views/characters/index.html.erb:16:in `each'
+    app/views/characters/index.html.erb:16
+    app/controllers/characters_controller.rb:7:in `index'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (63.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-04-05 22:00:10) [GET]
+  [4;35;1mCharacter Load (1.0ms)[0m   [0mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+  [4;36;1mRace Load (0.3ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+  [4;35;1mRace Load (0.2ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+) on line #20 of app/views/characters/index.html.erb:
+17:   <tr>
+18:     <td><%=h character.name %></td>
+19:     <td><%=h character.race.name %></td>
+20:     <td><%=h character.aStr %></td>
+21:     <td><%=h character.aDex %></td>
+22:     <td><%=h character.aCon %></td>
+23:     <td><%=h character.aInt %></td>
+
+    app/models/character.rb:5:in `aStr'
+    app/views/characters/index.html.erb:20:in `block in _run_erb_app47views47characters47index46html46erb'
+    app/views/characters/index.html.erb:16:in `each'
+    app/views/characters/index.html.erb:16
+    app/controllers/characters_controller.rb:7:in `index'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (101.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2010-04-05 22:04:00) [GET]
+  [4;35;1mCharacter Load (0.8ms)[0m   [0mSELECT * FROM "characters" [0m
+Rendering template within layouts/characters
+Rendering characters/index
+  [4;36;1mRace Load (0.4ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+  [4;35;1mRace Load (0.1ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 20ms (View: 15, DB: 1) | 200 OK [http://localhost/characters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-04-05 22:04:06) [GET]
+  [4;36;1mRace Load (0.6ms)[0m   [0;1mSELECT * FROM "races" ORDER BY name[0m
+Rendering template within layouts/characters
+Rendering characters/new
+Rendered characters/_character (6.2ms)
+Completed in 26ms (View: 14, DB: 1) | 200 OK [http://localhost/characters/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#create (for 127.0.0.1 at 2010-04-05 22:04:17) [POST]
+  Parameters: {"authenticity_token"=>"ALMFvb9aAKqVrTYM/yBUU3RUay9toX1x+tOJ+hYePk0=", "character"=>{"name"=>"bob", "race_id"=>"1", "strength"=>"10"}, "commit"=>"+"}
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(E'bob', 10, NULL, NULL, NULL, NULL, NULL, '2010-04-05 21:04:17.454482', '2010-04-05 21:04:17.454482', 1) RETURNING "id"[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/characters/12
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/characters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-04-05 22:04:17) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mCharacter Load (0.4ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 12) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;35;1mRace Load (0.2ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+) on line #31 of app/views/characters/show.html.erb:
+28:   <td><b>Dexterity:</b></td>
+29:   <td><%=h @character.dexterity %></td>
+30:   <td><%=h @character.race.dex_mod %></td>
+31:   <td><%=h @character.aDex %></td>
+32:   <td><%=h @character.points("dexterity") %></td>
+33: </tr>
+34: 
+
+    app/models/character.rb:9:in `aDex'
+    app/views/characters/show.html.erb:31
+    app/controllers/characters_controller.rb:18:in `show'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (59.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-04-05 22:08:43) [GET]
+  [4;36;1mRace Load (0.5ms)[0m   [0;1mSELECT * FROM "races" ORDER BY name[0m
+
+NoMethodError (undefined method `str=' for #<Character:0xa3a57b8>):
+  app/controllers/characters_controller.rb:29:in `new'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (43.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-04-05 22:10:07) [GET]
+  [4;35;1mRace Load (0.5ms)[0m   [0mSELECT * FROM "races" ORDER BY name[0m
+
+NoMethodError (undefined method `constiution=' for #<Character:0xac0b938>):
+  app/controllers/characters_controller.rb:31:in `new'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (41.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-04-05 22:10:39) [GET]
+  [4;36;1mRace Load (0.6ms)[0m   [0;1mSELECT * FROM "races" ORDER BY name[0m
+
+NoMethodError (undefined method `inteligence=' for #<Character:0xa5a38f4>):
+  app/controllers/characters_controller.rb:32:in `new'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (42.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-04-05 22:11:54) [GET]
+  [4;35;1mRace Load (0.5ms)[0m   [0mSELECT * FROM "races" ORDER BY name[0m
+Rendering template within layouts/characters
+Rendering characters/new
+Rendered characters/_character (2.9ms)
+Completed in 18ms (View: 4, DB: 1) | 200 OK [http://localhost/characters/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#create (for 127.0.0.1 at 2010-04-05 22:11:56) [POST]
+  Parameters: {"authenticity_token"=>"ALMFvb9aAKqVrTYM/yBUU3RUay9toX1x+tOJ+hYePk0=", "character"=>{"name"=>"", "race_id"=>"1", "strength"=>"10"}, "commit"=>"+"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(E'', 10, NULL, NULL, NULL, NULL, NULL, '2010-04-05 21:11:56.411681', '2010-04-05 21:11:56.411681', 1) RETURNING "id"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/characters/13
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/characters]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-04-05 22:11:56) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mCharacter Load (0.6ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 13) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;36;1mRace Load (0.2ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+) on line #31 of app/views/characters/show.html.erb:
+28:   <td><b>Dexterity:</b></td>
+29:   <td><%=h @character.dexterity %></td>
+30:   <td><%=h @character.race.dex_mod %></td>
+31:   <td><%=h @character.aDex %></td>
+32:   <td><%=h @character.points("dexterity") %></td>
+33: </tr>
+34: 
+
+    app/models/character.rb:9:in `aDex'
+    app/views/characters/show.html.erb:31
+    app/controllers/characters_controller.rb:18:in `show'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (61.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-04-05 22:12:27) [GET]
+  [4;35;1mRace Load (0.6ms)[0m   [0mSELECT * FROM "races" ORDER BY name[0m
+Rendering template within layouts/characters
+Rendering characters/new
+Rendered characters/_character (3.0ms)
+Completed in 18ms (View: 4, DB: 1) | 200 OK [http://localhost/characters/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#create (for 127.0.0.1 at 2010-04-05 22:12:40) [POST]
+  Parameters: {"authenticity_token"=>"ALMFvb9aAKqVrTYM/yBUU3RUay9toX1x+tOJ+hYePk0=", "character"=>{"name"=>"", "race_id"=>"1", "strength"=>"10"}, "commit"=>"+"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(E'', 10, NULL, NULL, NULL, NULL, NULL, '2010-04-05 21:12:40.530056', '2010-04-05 21:12:40.530056', 1) RETURNING "id"[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/characters/14
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/characters]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-04-05 22:12:40) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mCharacter Load (0.3ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 14) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;36;1mRace Load (0.3ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+) on line #31 of app/views/characters/show.html.erb:
+28:   <td><b>Dexterity:</b></td>
+29:   <td><%=h @character.dexterity %></td>
+30:   <td><%=h @character.race.dex_mod %></td>
+31:   <td><%=h @character.aDex %></td>
+32:   <td><%=h @character.points("dexterity") %></td>
+33: </tr>
+34: 
+
+    app/models/character.rb:9:in `aDex'
+    app/views/characters/show.html.erb:31
+    app/controllers/characters_controller.rb:18:in `show'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (60.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#create (for 127.0.0.1 at 2010-04-05 22:14:28) [POST]
+  Parameters: {"authenticity_token"=>"ALMFvb9aAKqVrTYM/yBUU3RUay9toX1x+tOJ+hYePk0=", "character"=>{"name"=>"do", "race_id"=>"1", "strength"=>"10"}, "commit"=>"+"}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(E'do', 10, NULL, NULL, NULL, NULL, NULL, '2010-04-05 21:14:28.868498', '2010-04-05 21:14:28.868498', 1) RETURNING "id"[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/characters/15
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/characters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-04-05 22:14:28) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mCharacter Load (0.3ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 15) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;35;1mRace Load (0.3ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+) on line #31 of app/views/characters/show.html.erb:
+28:   <td><b>Dexterity:</b></td>
+29:   <td><%=h @character.dexterity %></td>
+30:   <td><%=h @character.race.dex_mod %></td>
+31:   <td><%=h @character.aDex %></td>
+32:   <td><%=h @character.points("dexterity") %></td>
+33: </tr>
+34: 
+
+    app/models/character.rb:9:in `aDex'
+    app/views/characters/show.html.erb:31
+    app/controllers/characters_controller.rb:18:in `show'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (60.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#create (for 127.0.0.1 at 2010-04-05 22:15:02) [POST]
+  Parameters: {"authenticity_token"=>"ALMFvb9aAKqVrTYM/yBUU3RUay9toX1x+tOJ+hYePk0=", "character"=>{"name"=>"do", "race_id"=>"1", "strength"=>"10"}, "commit"=>"+"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(E'do', 10, NULL, NULL, NULL, NULL, NULL, '2010-04-05 21:15:02.855649', '2010-04-05 21:15:02.855649', 1) RETURNING "id"[0m
+  [4;36;1mSQL (8.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/characters/16
+Completed in 22ms (DB: 9) | 302 Found [http://localhost/characters]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-04-05 22:15:02) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mCharacter Load (0.3ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 16) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;36;1mRace Load (0.3ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+) on line #31 of app/views/characters/show.html.erb:
+28:   <td><b>Dexterity:</b></td>
+29:   <td><%=h @character.dexterity %></td>
+30:   <td><%=h @character.race.dex_mod %></td>
+31:   <td><%=h @character.aDex %></td>
+32:   <td><%=h @character.points("dexterity") %></td>
+33: </tr>
+34: 
+
+    app/models/character.rb:9:in `aDex'
+    app/views/characters/show.html.erb:31
+    app/controllers/characters_controller.rb:18:in `show'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (95.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-04-05 22:15:10) [GET]
+  [4;35;1mRace Load (0.5ms)[0m   [0mSELECT * FROM "races" ORDER BY name[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2010-04-05 21:15:10.510291', '2010-04-05 21:15:10.510291', NULL) RETURNING "id"[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/characters/17
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/characters_controller.rb:38:in `new'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (51.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-04-05 22:15:59) [GET]
+  [4;35;1mRace Load (0.6ms)[0m   [0mSELECT * FROM "races" ORDER BY name[0m
+
+NameError (undefined local variable or method `redirect_to_create' for #<CharactersController:0xa30ec38>):
+  app/controllers/characters_controller.rb:38:in `block (2 levels) in new'
+  app/controllers/characters_controller.rb:37:in `new'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (84.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-04-05 22:16:29) [GET]
+  [4;36;1mRace Load (0.5ms)[0m   [0;1mSELECT * FROM "races" ORDER BY name[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2010-04-05 21:16:29.799874', '2010-04-05 21:16:29.799874', NULL) RETURNING "id"[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/characters/18
+Completed in 29ms (DB: 2) | 302 Found [http://localhost/characters/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-04-05 22:16:29) [GET]
+  Parameters: {"id"=>"18"}
+  [4;36;1mCharacter Load (0.3ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 18) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #8 of app/views/characters/show.html.erb:
+5: 
+6: <p>
+7:   <b>Race:</b>
+8:   <%=h @character.race.name %>
+9: </p>
+10: 
+11: <table>
+
+    app/views/characters/show.html.erb:8
+    app/controllers/characters_controller.rb:18:in `show'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (60.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-04-05 22:17:24) [GET]
+  Parameters: {"id"=>"18"}
+  [4;35;1mCharacter Load (0.3ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 18) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #8 of app/views/characters/show.html.erb:
+5: 
+6: <p>
+7:   <b>Race:</b>
+8:   <%=h @character.race.name %>
+9: </p>
+10: 
+11: <table>
+
+    app/views/characters/show.html.erb:8
+    app/controllers/characters_controller.rb:18:in `show'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby19/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby19/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (59.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-04-05 22:17:30) [GET]
+  [4;36;1mRace Load (0.5ms)[0m   [0;1mSELECT * FROM "races" ORDER BY name[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(NULL, 10, 10, 10, 10, 10, 10, '2010-04-05 21:17:30.882604', '2010-04-05 21:17:30.882604', NULL) RETURNING "id"[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/characters
+Rendering characters/new
+Rendered characters/_character (3.2ms)
+Completed in 23ms (View: 5, DB: 1) | 200 OK [http://localhost/characters/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#update (for 127.0.0.1 at 2010-04-05 22:17:35) [PUT]
+  Parameters: {"authenticity_token"=>"ALMFvb9aAKqVrTYM/yBUU3RUay9toX1x+tOJ+hYePk0=", "character"=>{"name"=>"", "race_id"=>"1", "strength"=>"10"}, "commit"=>"+", "id"=>"19"}
+  [4;36;1mCharacter Load (0.3ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 19) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCharacter Update (0.4ms)[0m   [0;1mUPDATE "characters" SET "name" = E'', "race_id" = 1, "updated_at" = '2010-04-05 21:17:35.826781' WHERE "id" = 19[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/characters/19
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/characters/19]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-04-05 22:17:35) [GET]
+  Parameters: {"id"=>"19"}
+  [4;36;1mCharacter Load (0.3ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 19) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;35;1mRace Load (0.3ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/characters/19]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-04-05 22:18:03) [GET]
+  [4;36;1mRace Load (0.5ms)[0m   [0;1mSELECT * FROM "races" ORDER BY name[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(NULL, 10, 10, 10, 10, 10, 10, '2010-04-05 21:18:03.222661', '2010-04-05 21:18:03.222661', NULL) RETURNING "id"[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/characters
+Rendering characters/new
+Rendered characters/_character (3.1ms)
+Completed in 24ms (View: 5, DB: 2) | 200 OK [http://localhost/characters/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#update (for 127.0.0.1 at 2010-04-05 22:18:04) [PUT]
+  Parameters: {"authenticity_token"=>"ALMFvb9aAKqVrTYM/yBUU3RUay9toX1x+tOJ+hYePk0=", "character"=>{"name"=>"", "race_id"=>"1", "strength"=>"10"}, "commit"=>"+", "id"=>"20"}
+  [4;36;1mCharacter Load (0.3ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 20) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCharacter Update (0.2ms)[0m   [0;1mUPDATE "characters" SET "name" = E'', "race_id" = 1, "updated_at" = '2010-04-05 21:18:04.947288' WHERE "id" = 20[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/characters/20
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/characters/20]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-04-05 22:18:04) [GET]
+  Parameters: {"id"=>"20"}
+  [4;36;1mCharacter Load (0.4ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 20) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;35;1mRace Load (0.3ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 19ms (View: 10, DB: 1) | 200 OK [http://localhost/characters/20]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#update (for 127.0.0.1 at 2010-04-05 22:18:17) [PUT]
+  Parameters: {"authenticity_token"=>"ALMFvb9aAKqVrTYM/yBUU3RUay9toX1x+tOJ+hYePk0=", "character"=>{"name"=>"lalal", "race_id"=>"1", "strength"=>"10"}, "commit"=>"+", "id"=>"20"}
+  [4;36;1mCharacter Load (0.3ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 20) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCharacter Update (0.2ms)[0m   [0;1mUPDATE "characters" SET "name" = E'lalal', "updated_at" = '2010-04-05 21:18:17.473130' WHERE "id" = 20[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/characters/20
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/characters/20]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-04-05 22:18:17) [GET]
+  Parameters: {"id"=>"20"}
+  [4;36;1mCharacter Load (0.3ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 20) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;35;1mRace Load (0.2ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/characters/20]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-04-05 22:18:34) [GET]
+  [4;36;1mRace Load (0.5ms)[0m   [0;1mSELECT * FROM "races" ORDER BY name[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(NULL, 10, 10, 10, 10, 10, 10, '2010-04-05 21:18:34.760537', '2010-04-05 21:18:34.760537', NULL) RETURNING "id"[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/characters
+Rendering characters/new
+Rendered characters/_character (3.2ms)
+Completed in 50ms (View: 32, DB: 2) | 200 OK [http://localhost/characters/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#update (for 127.0.0.1 at 2010-04-05 22:18:39) [PUT]
+  Parameters: {"authenticity_token"=>"ALMFvb9aAKqVrTYM/yBUU3RUay9toX1x+tOJ+hYePk0=", "character"=>{"name"=>"lsls", "race_id"=>"1", "strength"=>"10"}, "commit"=>"+", "id"=>"21"}
+  [4;36;1mCharacter Load (0.3ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 21) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCharacter Update (0.2ms)[0m   [0;1mUPDATE "characters" SET "name" = E'lsls', "race_id" = 1, "updated_at" = '2010-04-05 21:18:39.086963' WHERE "id" = 21[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/characters/21
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/characters/21]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-04-05 22:18:39) [GET]
+  Parameters: {"id"=>"21"}
+  [4;36;1mCharacter Load (0.3ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 21) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;35;1mRace Load (0.3ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/characters/21]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-04-05 22:23:30) [GET]
+  [4;36;1mRace Load (0.5ms)[0m   [0;1mSELECT * FROM "races" ORDER BY name[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(NULL, 10, 10, 10, 10, 10, 10, '2010-04-05 21:23:30.646881', '2010-04-05 21:23:30.646881', NULL) RETURNING "id"[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/characters
+Rendering characters/new
+Rendered characters/_character (4.7ms)
+Completed in 31ms (View: 12, DB: 1) | 200 OK [http://localhost/characters/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#update (for 127.0.0.1 at 2010-04-05 22:23:34) [PUT]
+  Parameters: {"authenticity_token"=>"ALMFvb9aAKqVrTYM/yBUU3RUay9toX1x+tOJ+hYePk0=", "character"=>{"name"=>"", "race_id"=>"1", "strength"=>"10"}, "commit"=>"+", "id"=>"22"}
+  [4;36;1mCharacter Load (0.3ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 22) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCharacter Update (0.2ms)[0m   [0;1mUPDATE "characters" SET "name" = E'', "race_id" = 1, "updated_at" = '2010-04-05 21:23:34.142695' WHERE "id" = 22[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/characters/22
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/characters/22]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-04-05 22:23:34) [GET]
+  Parameters: {"id"=>"22"}
+  [4;36;1mCharacter Load (0.3ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 22) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;35;1mRace Load (0.2ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 16ms (View: 8, DB: 1) | 200 OK [http://localhost/characters/22]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-04-05 22:24:27) [GET]
+  [4;36;1mRace Load (0.5ms)[0m   [0;1mSELECT * FROM "races" ORDER BY name[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(NULL, 10, 10, 10, 10, 10, 10, '2010-04-05 21:24:27.957547', '2010-04-05 21:24:27.957547', NULL) RETURNING "id"[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/characters
+Rendering characters/new
+Rendered characters/_character (3.4ms)
+Completed in 23ms (View: 5, DB: 1) | 200 OK [http://localhost/characters/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#update (for 127.0.0.1 at 2010-04-05 22:24:30) [PUT]
+  Parameters: {"authenticity_token"=>"ALMFvb9aAKqVrTYM/yBUU3RUay9toX1x+tOJ+hYePk0=", "character"=>{"name"=>"", "race_id"=>"1", "strength"=>"10"}, "commit"=>"+", "id"=>"23"}
+  [4;36;1mCharacter Load (0.3ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 23) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCharacter Update (0.5ms)[0m   [0;1mUPDATE "characters" SET "name" = E'', "race_id" = 1, "updated_at" = '2010-04-05 21:24:30.117055' WHERE "id" = 23[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/characters/23
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/characters/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-04-05 22:24:30) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mCharacter Load (0.3ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 23) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;35;1mRace Load (0.2ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/characters/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#new (for 127.0.0.1 at 2010-04-05 22:25:25) [GET]
+  [4;36;1mRace Load (0.5ms)[0m   [0;1mSELECT * FROM "races" ORDER BY name[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO "characters" ("name", "strength", "dexterity", "constitution", "intelegence", "wisdom", "charisma", "created_at", "updated_at", "race_id") VALUES(NULL, 10, 10, 10, 10, 10, 10, '2010-04-05 21:25:25.855305', '2010-04-05 21:25:25.855305', NULL) RETURNING "id"[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/characters
+Rendering characters/new
+Rendered characters/_character (7.3ms)
+Completed in 27ms (View: 9, DB: 1) | 200 OK [http://localhost/characters/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#update (for 127.0.0.1 at 2010-04-05 22:25:27) [PUT]
+  Parameters: {"authenticity_token"=>"ALMFvb9aAKqVrTYM/yBUU3RUay9toX1x+tOJ+hYePk0=", "character"=>{"name"=>"", "race_id"=>"1", "strength"=>"10"}, "commit"=>"+", "id"=>"24"}
+  [4;36;1mCharacter Load (0.4ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 24) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCharacter Update (0.2ms)[0m   [0;1mUPDATE "characters" SET "name" = E'', "race_id" = 1, "updated_at" = '2010-04-05 21:25:27.267785' WHERE "id" = 24[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/characters/24
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/characters/24]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-04-05 22:25:27) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mCharacter Load (0.3ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 24) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;35;1mRace Load (0.2ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/characters/24]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#update (for 127.0.0.1 at 2010-04-05 22:26:10) [PUT]
+  Parameters: {"authenticity_token"=>"ALMFvb9aAKqVrTYM/yBUU3RUay9toX1x+tOJ+hYePk0=", "character"=>{"name"=>"", "race_id"=>"1", "strength"=>"10"}, "commit"=>"+", "id"=>"24"}
+  [4;36;1mCharacter Load (0.3ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 24) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/characters/24
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/characters/24]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2010-04-05 22:26:10) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mCharacter Load (0.4ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."id" = 24) [0m
+Rendering template within layouts/characters
+Rendering characters/show
+  [4;36;1mRace Load (0.3ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."id" = 1) [0m
+Completed in 17ms (View: 9, DB: 1) | 200 OK [http://localhost/characters/24]

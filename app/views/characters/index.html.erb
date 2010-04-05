@@ -10,18 +10,20 @@
     <th>Intelegence</th>
     <th>Wisdom</th>
     <th>Charisma</th>
+    <th>Points Spent</th>
   </tr>
 
 <% @characters.each do |character| %>
   <tr>
     <td><%=h character.name %></td>
     <td><%=h character.race.name %></td>
-    <td><%=h character.strength %></td>
-    <td><%=h character.dexterity %></td>
-    <td><%=h character.constitution %></td>
-    <td><%=h character.intelegence %></td>
-    <td><%=h character.wisdom %></td>
-    <td><%=h character.charisma %></td>
+    <td><%=h character.aStr %></td>
+    <td><%=h character.aDex %></td>
+    <td><%=h character.aCon %></td>
+    <td><%=h character.aInt %></td>
+    <td><%=h character.aWis %></td>
+    <td><%=h character.aCha %></td>
+    <td><%=h character.total_points %></td>
     <td><%= link_to 'Show', character %></td>
     <td><%= link_to 'Edit', edit_character_path(character) %></td>
     <td><%= link_to 'Destroy', character, :confirm => 'Are you sure?', :method => :delete %></td>
