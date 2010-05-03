@@ -1,42 +1,14 @@
 <% form_for(character) do |f| %>
   <%= f.error_messages %>
-
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
+  <div id="race">
     <%= f.label :race %><br />
     <%= f.select :race_id, @races %>
-  </p>
-  <p>
-    <%= f.label :strength %><br />
-    <%= f.text_field :strength %>
-		<% form_remote_tag :url => {:action => 'str_inc', :id => character, :str => :strength } do %>
-			<%= submit_tag "+" %>
-		<% end %>
-  </p>
-  <p>
-    <%= f.label :dexterity %><br />
-    <%= f.text_field :dexterity %>
-  </p>
-  <p>
-    <%= f.label :constitution %><br />
-    <%= f.text_field :constitution %>
-  </p>
-  <p>
-    <%= f.label :intelegence %><br />
-    <%= f.text_field :intelegence %>
-  </p>
-  <p>
-    <%= f.label :wisdom %><br />
-    <%= f.text_field :wisdom %>
-  </p>
-  <p>
-    <%= f.label :charisma %><br />
-    <%= f.text_field :charisma %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
+  </div>
+  <%= button_to_remote "Update", :update => 'table', :url => {:action => "update_race", :id => character.id}, 
+        :with => "'race_id=' + escape(value)" %>
+
+  
+  <table id="table">
+    <%= render(:partial => "table", :object => character)%>
+  </table>
 <% end %>

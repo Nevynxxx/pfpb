@@ -1,0 +1,7 @@
+<td><%= label :character, :strength %></td>
+<td><%= label :character, @character.strength %></td>
+<td><%=h @character.race.str_mod %></td>
+<td><%=h @character.aStr %></td>
+<td><%=h @character.points("strength") %></td>
+<td><%= button_to_remote "-", :update => "str", :url => { :action => "stat_dec", :id => @character.id, :stat => "strength" } %></td>
+<td><%= button_to_remote "+", :update => "str", :url => { :action => "stat_inc", :id => @character.id, :stat => "strength"  } %></td>

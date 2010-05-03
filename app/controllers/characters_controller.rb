@@ -26,13 +26,14 @@ class CharactersController < ApplicationController
   def new
     @character = Character.new
 		@races = Race.find(:all, :order => "name").map {|u| [u.name, u.id]}
+		@character.race = Race.find_by_id 1
 		@character.strength = 10
 		@character.dexterity = 10
 		@character.constitution = 10
 		@character.intelegence = 10
 		@character.wisdom = 10
 		@character.charisma = 10
-
+		
 		@character.save
 
     respond_to do |format|
@@ -92,16 +93,34 @@ class CharactersController < ApplicationController
     end
   end
 
-	def inc_str
+  def stat_inc
     @character = Character.find(params[:id])
-		puts "Arrggghhh"
-	  @character.strength = params[:strength] + 1
-		@character.save
-
-		respond_to do |format|
-      #format.html { redirect_to_index }
-      format.xml  { head :ok }
-    end
-	end
+    stat = @character.send(params[:stat])
+    stat = stat + 1 if stat < 18
+    @character.write_attribute(params[:stat], stat)
+    @character.save
+    render :partial  => params[:stat]
+  end
+  
+  def stat_dec
+    @character = Character.find(params[:id])
+    stat = @character.send(params[:stat])
+    stat = stat - 1 if stat > 7
+    @character.write_attribute(params[:stat], stat)
+    @character.save
+    render :partial  => params[:stat]
+  end
+  
+  def update_points
+    @character = Character.find_by_id(params[:id])
+    render :text => @character.total_points
+  end
+  
+  def update_race
+    @character = Character.find_by_id(params[:id])
+    @character.race = Race.find_by_id(params[:race_id])
+    @character.save
+    render :partial => 'table'
+  end
 	
 end

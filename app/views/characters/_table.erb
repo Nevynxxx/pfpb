@@ -1,0 +1,33 @@
+<tr>
+      <th>Stat</th>
+      <th>Base</th>
+      <th>Race Mod</th>
+      <th>Total</th>
+      <th>Points</th>
+    </tr>
+        <tr id="str">
+      <%= render(:partial => "strength", :object => @character) %>
+    </tr>
+    <tr id="dex">
+      <%= render(:partial => "dexterity", :object => @character) %>
+    </tr>
+    <tr id="con">
+      <%= render(:partial => "constitution", :object => @character) %>
+    </tr>
+    <tr id="int">
+      <%= render(:partial => "intelegence", :object => @character) %>
+    </tr>
+    <tr id="wis">
+      <%= render(:partial => "wisdom", :object => @character) %>
+    </tr>
+    <tr id="cha">
+      <%= render(:partial => "charisma", :object => @character) %>
+    </tr>
+   <tr>
+	<td />
+	<td />
+	<td />
+	<td><b>Total points</b></td>
+	<td id="points"><%= @character.total_points %></td>
+	<%= periodically_call_remote(:url => {:action => 'update_points', :id => @character.id}, :frequency => '5', :update => 'points') %>
+    </tr>

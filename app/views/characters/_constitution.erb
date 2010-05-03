@@ -1,0 +1,7 @@
+<td><%= label :character, :constitution %></td>
+<td><%= label :character, @character.constitution %></td>
+<td><%=h @character.race.con_mod %></td>
+<td><%=h @character.aCon %></td>
+<td><%=h @character.points("constitution") %></td>
+<td><%= button_to_remote "-", :update => "con", :url => { :action => "stat_dec", :id => @character.id, :stat => "constitution" } %></td>
+<td><%= button_to_remote "+", :update => "con", :url => { :action => "stat_inc", :id => @character.id, :stat => "constitution"  } %></td>

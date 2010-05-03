@@ -1,0 +1,7 @@
+<td><%= label :character, :charisma %></td>
+<td><%= label :character, @character.charisma %></td>
+<td><%=h @character.race.cha_mod %></td>
+<td><%=h @character.aCha %></td>
+<td><%=h @character.points("charisma") %></td>
+<td><%= button_to_remote "-", :update => "cha", :url => { :action => "stat_dec", :id => @character.id, :stat => "charisma" } %></td>
+<td><%= button_to_remote "+", :update => "cha", :url => { :action => "stat_inc", :id => @character.id, :stat => "charisma"  } %></td>
