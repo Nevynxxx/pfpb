@@ -4,5 +4,15 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake/dsl_definition'
 require 'rake'
+# If you named your application something other than Pfpb, change that below
+module ::Pfpb
+    class Application
+        include Rake::DSL
+    end
+end
+
+module ::RakeFileUtils
+    extend Rake::FileUtilsExt
+end
 
 Pfpb::Application.load_tasks
