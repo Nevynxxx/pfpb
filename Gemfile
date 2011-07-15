@@ -5,7 +5,7 @@ gem 'rails', '3.0.6'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+gem 'sqlite3'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -26,15 +26,6 @@ gem 'pg'
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
- group :development, :test do
-	gem 'sqlite3'
-	gem 'annotate'
-#	gem 'rspec-rails'
-#	gem 'capybara'
-# 	gem 'database_cleaner'
-# 	gem 'cucumber-rails'
-# 	gem 'cucumber'
-# 	gem 'spork'
-# 	gem 'launchy'
-# 	gem 'webrat'
- end
+# group :development, :test do
+#   gem 'webrat'
+# end
