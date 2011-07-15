@@ -29,5 +29,4 @@
 	<td />
 	<td><b>Total points</b></td>
 	<td id="points"><%= @character.total_points %></td>
-	<%= periodically_call_remote(:url => {:action => 'update_points', :id => @character.id}, :frequency => '5', :update => 'points') %>
     </tr>

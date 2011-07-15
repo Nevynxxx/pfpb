@@ -3,5 +3,5 @@
 <td><%=h @character.race.wis_mod %></td>
 <td><%=h @character.aWis %></td>
 <td><%=h @character.points("wisdom") %></td>
-<td><%= button_to_remote "-", :update => "wis", :url => { :action => "stat_dec", :id => @character.id, :stat => "wisdom" } %></td>
-<td><%= button_to_remote "+", :update => "wis", :url => { :action => "stat_inc", :id => @character.id, :stat => "wisdom"  } %></td>
+<td><%= button_to "-", :remote => true, :update => "wis", :url => { :action => "stat_dec", :id => @character.id, :stat => "wisdom" } %></td>
+<td><%= button_to "+", :remote => true, :update => "wis", :url => { :action => "stat_inc", :id => @character.id, :stat => "wisdom"  } %></td>

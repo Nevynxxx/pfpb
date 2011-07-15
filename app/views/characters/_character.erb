@@ -4,7 +4,7 @@
     <%= f.label :race %><br />
     <%= f.select :race_id, @races %>
   </div>
-  <%= button_to_remote "Update", :update => 'table', :url => {:action => "update_race", :id => character.id}, 
+  <%= button_to "Update", :remote => true, :update => 'table', :url => {:action => "update_race", :id => character.id}, 
         :with => "'race_id=' + escape(value)" %>
 
   

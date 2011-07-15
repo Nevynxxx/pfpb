@@ -3,5 +3,5 @@
 <td><%=h @character.race.dex_mod %></td>
 <td><%=h @character.aDex %></td>
 <td><%=h @character.points("dexterity") %></td>
-<td><%= button_to_remote "-", :update => "dex", :url => { :action => "stat_dec", :id => @character.id, :stat => "dexterity" } %></td>
-<td><%= button_to_remote "+", :update => "dex", :url => { :action => "stat_inc", :id => @character.id, :stat => "dexterity"  } %></td>
+<td><%= button_to "-", :remote => true, :update => "dex", :url => { :action => "stat_dec", :id => @character.id, :stat => "dexterity" } %></td>
+<td><%= button_to "+", :remote => true, :update => "dex", :url => { :action => "stat_inc", :id => @character.id, :stat => "dexterity"  } %></td>
