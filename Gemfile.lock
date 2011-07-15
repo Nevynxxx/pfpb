@@ -28,7 +28,6 @@ GEM
       activemodel (= 3.0.6)
       activesupport (= 3.0.6)
     activesupport (3.0.6)
-    annotate (2.4.0)
     arel (2.0.10)
     builder (2.1.2)
     erubis (2.6.6)
@@ -40,7 +39,6 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
-    pg (0.11.0)
     polyglot (0.3.1)
     rack (1.2.3)
     rack-mount (0.6.14)
@@ -71,7 +69,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  annotate
-  pg
   rails (= 3.0.6)
   sqlite3
