@@ -1,6 +1,9 @@
 class Character < ActiveRecord::Base
 	belongs_to :race
 
+	validates :name, :presence => true
+	validates :race_id, :presence => true
+
 	def aStr
 		self.strength + self.race.str_mod
 	end
