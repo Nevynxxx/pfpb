@@ -25,7 +25,7 @@ class CharactersController < ApplicationController
   # GET /characters/new.xml
   def new
     @character = Character.new
-		@races = Race.find(:all, :order => "name").map {|u| [u.name, u.id]}
+		@races = Race.order("name").map {|u| [u.name, u.id]}
 		@character.race = Race.find_by_id 1
 		@character.strength = 10
 		@character.dexterity = 10
