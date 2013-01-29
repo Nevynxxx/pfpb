@@ -28,14 +28,9 @@ gem 'sqlite3'
 # and rake tasks are available in development mode:
  group :development, :test do
 	gem 'sqlite3'
-	gem 'rspec-rails'
+	gem 'rspec-rails', "~> 2.6"
 	gem 'capybara'
  	gem 'spork'
  	gem 'launchy'
  	gem 'webrat'
  end
-group :test do
-  gem 'cucumber-rails', :require => false
-  # database_cleaner is not required, but highly recommended
-  gem 'database_cleaner'
-end
